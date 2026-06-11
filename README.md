@@ -42,14 +42,14 @@ O programa utiliza apenas as bibliotecas padrão da linguagem C (`stdio.h`, `std
 
 * **No Linux e macOS:**
 ```bash
-gcc sistema_contas.c -o sistema_contas
+gcc manu_contas.c -o manu_contas
 
 ```
 
 
 * **No Windows (Via Prompt/PowerShell com MinGW):**
 ```powershell
-gcc sistema_contas.c -o sistema_contas.exe
+gcc manu_contas.c -o manu_contas.exe
 
 ```
 
@@ -63,7 +63,7 @@ Após compilar com sucesso, execute o binário gerado de acordo com o seu sistem
 
 * **No Linux e macOS:**
 ```bash
-./sistema_contas
+./manu_contas
 
 ```
 
