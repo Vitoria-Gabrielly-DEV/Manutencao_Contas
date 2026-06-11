@@ -12,8 +12,46 @@ Este projeto consiste em um sistema de manutenção de contas de tamanho fixo ut
 6. **Uso de `rewind()`:** Move o indicador de posição de volta ao início do arquivo para permitir uma releitura completa dos dados.
 
 ## Como Executar o Projeto
+Esta seção detalha as instruções para clonar, compilar e executar o sistema em qualquer sistema operacional.
 
-1. **Clonar o repositório:**
-   ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
-   cd NOME_DO_REPOSITORIO
+- Pré-requisitos
+Antes de começar, certifique-se de ter um compilador C instalado no seu sistema. O mais recomendado é o GCC (GNU Compiler Collection).
+
+Linux: O GCC costuma vir instalado. Caso não tenha, use sudo apt install build-essential (distribuições baseadas em Debian/Ubuntu).
+
+macOS: Instale as ferramentas de linha de comando digitando xcode-select --install no terminal.
+
+Windows: Recomenda-se utilizar o MinGW ou clonar o projeto dentro do VS Code configurado para C, ou usar o wsl (Windows Subsystem for Linux).
+
+**Passo a Passo**
+**1. Clonar o Repositório**
+Abra o seu terminal (ou Prompt de Comando/PowerShell no Windows) e execute:
+
+Bash
+git clone https://github.com/Vitoria-Gabrielly-DEV/Manutencao_Contas.git
+cd Manutencao_Contas
+
+**2. Compilação**
+O programa utiliza apenas bibliotecas padrão da linguagem C (stdio.h, stdlib.h, string.h), portanto, a compilação é direta.
+
+**No Linux e macOS:**
+Bash
+gcc sistema_contas.c -o sistema_contas
+
+**No Windows (Via Prompt/PowerShell com MinGW):**
+Powershell
+gcc sistema_contas.c -o sistema_contas.exe
+
+* Nota do Desenvolvedor: O argumento -o define o nome do arquivo executável de saída. Se omitido, o compilador gerará um arquivo padrão chamado a.out (Linux/macOS) ou a.exe (Windows).
+
+**3. Execução**
+Após compilar com sucesso, execute o binário gerado:
+
+**No Linux e macOS:**
+
+Bash
+./sistema_contas
+
+**No Windows:**
+Powershell
+.\sistema_contas.exe
