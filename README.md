@@ -70,6 +70,6 @@ Após compilar com sucesso, execute o binário gerado de acordo com o seu sistem
 
 * **No Windows:**
 ```powershell
-.\sistema_contas.exe
+.\manu_contas.exe
 
 ```
