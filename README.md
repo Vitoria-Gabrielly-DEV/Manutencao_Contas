@@ -31,7 +31,7 @@ Antes de começar, certifique-se de ter um compilador C instalado no seu sistema
 Abra o seu terminal (ou Prompt de Comando/PowerShell no Windows) e execute os comandos abaixo:
 
 ```bash
-git clone [https://github.com/Vitoria-Gabrielly-DEV/Manutencao_Contas.git](https://github.com/Vitoria-Gabrielly-DEV/Manutencao_Contas.git)
+git clone https://github.com/Vitoria-Gabrielly-DEV/Manutencao_Contas.git
 cd Manutencao_Contas
 
 ```
