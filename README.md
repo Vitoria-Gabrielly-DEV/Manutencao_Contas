@@ -11,47 +11,65 @@ Este projeto consiste em um sistema de manutenção de contas de tamanho fixo ut
 5. **Listagem de clientes:** Exibe todos os registros ativos a partir do ponteiro atual do arquivo.
 6. **Uso de `rewind()`:** Move o indicador de posição de volta ao início do arquivo para permitir uma releitura completa dos dados.
 
+---
+
 ## Como Executar o Projeto
+
 Esta seção detalha as instruções para clonar, compilar e executar o sistema em qualquer sistema operacional.
 
-- Pré-requisitos
-Antes de começar, certifique-se de ter um compilador C instalado no seu sistema. O mais recomendado é o GCC (GNU Compiler Collection).
+### Pré-requisitos
 
-Linux: O GCC costuma vir instalado. Caso não tenha, use sudo apt install build-essential (distribuições baseadas em Debian/Ubuntu).
+Antes de começar, certifique-se de ter um compilador C instalado no seu sistema. O mais recomendado é o **GCC** (*GNU Compiler Collection*).
 
-macOS: Instale as ferramentas de linha de comando digitando xcode-select --install no terminal.
+* **Linux:** O GCC costuma vir instalado por padrão. Caso não tenha, instale utilizando o gerenciador de pacotes da sua distribuição (ex: `sudo apt install build-essential` para distribuições baseadas em Debian/Ubuntu).
+* **macOS:** Instale as ferramentas de linha de comando digitando `xcode-select --install` no terminal.
+* **Windows:** Recomenda-se utilizar o **MinGW**, configurar o ambiente do **VS Code** para C, ou utilizar o **WSL** (*Windows Subsystem for Linux*).
 
-Windows: Recomenda-se utilizar o MinGW ou clonar o projeto dentro do VS Code configurado para C, ou usar o wsl (Windows Subsystem for Linux).
+### Passo a Passo
 
-**Passo a Passo**
-**1. Clonar o Repositório**
-Abra o seu terminal (ou Prompt de Comando/PowerShell no Windows) e execute:
+#### 1. Clonar o Repositório
+Abra o seu terminal (ou Prompt de Comando/PowerShell no Windows) e execute os comandos abaixo:
 
-Bash
-git clone https://github.com/Vitoria-Gabrielly-DEV/Manutencao_Contas.git
+```bash
+git clone [https://github.com/Vitoria-Gabrielly-DEV/Manutencao_Contas.git](https://github.com/Vitoria-Gabrielly-DEV/Manutencao_Contas.git)
 cd Manutencao_Contas
 
-**2. Compilação**
-O programa utiliza apenas bibliotecas padrão da linguagem C (stdio.h, stdlib.h, string.h), portanto, a compilação é direta.
+```
 
-**No Linux e macOS:**
-Bash
+#### 2. Compilação
+
+O programa utiliza apenas as bibliotecas padrão da linguagem C (`stdio.h`, `stdlib.h`, `string.h`), portanto, a compilação é direta e sem dependências externas.
+
+* **No Linux e macOS:**
+```bash
 gcc sistema_contas.c -o sistema_contas
 
-**No Windows (Via Prompt/PowerShell com MinGW):**
-Powershell
+```
+
+
+* **No Windows (Via Prompt/PowerShell com MinGW):**
+```powershell
 gcc sistema_contas.c -o sistema_contas.exe
 
-* Nota do Desenvolvedor: O argumento -o define o nome do arquivo executável de saída. Se omitido, o compilador gerará um arquivo padrão chamado a.out (Linux/macOS) ou a.exe (Windows).
+```
 
-**3. Execução**
-Após compilar com sucesso, execute o binário gerado:
 
-**No Linux e macOS:**
 
-Bash
+>  **Nota do Desenvolvedor:** O argumento `-o` define o nome do arquivo executável de saída. Se omitido, o compilador gerará um arquivo padrão chamado `a.out` (Linux/macOS) ou `a.exe` (Windows).
+
+#### 3. Execução
+
+Após compilar com sucesso, execute o binário gerado de acordo com o seu sistema operacional:
+
+* **No Linux e macOS:**
+```bash
 ./sistema_contas
 
-**No Windows:**
-Powershell
+```
+
+
+* **No Windows:**
+```powershell
 .\sistema_contas.exe
+
+```
